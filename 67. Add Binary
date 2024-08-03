@@ -1,0 +1,12 @@
+// 67. Add Binary
+import java.math.BigInteger;
+class Solution {
+    public String addBinary(String a, String b) {
+        //String ans="";
+        BigInteger aa=new BigInteger(a,2);
+        BigInteger bb=new BigInteger(b,2);
+        BigInteger ab=aa.add(bb);
+        String ans=ab.toString(2);
+        return ans;
+    }
+}
